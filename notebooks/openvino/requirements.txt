@@ -1,7 +1,15 @@
+# Core dependencies from notebook script section
+optimum-benchmark[openvino]@git+https://github.com/huggingface/optimum-benchmark.git@main
+optimum-intel@git+https://github.com/huggingface/optimum-intel.git@main
+transformers==4.55.*
+torchvision
+num2words
+
+# Additional dependencies
 optimum-intel[openvino,nncf]
 evaluate[evaluator]
-ipywidgets
+ipywidgets==7.8.1
 torchaudio
-diffusers
-datasets
-pillow
+diffusers==0.33.1
+datasets==4.1.1
+pillow==11.3.0
